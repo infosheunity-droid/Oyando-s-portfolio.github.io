@@ -684,4 +684,223 @@ footer p:last-child {
 
 .mt-40 {
     margin-top: 40px;
+
+}
+/* ==========================================================================
+   PREMIUM TUTORING & MENTORSHIP SECTION
+   ========================================================================== */
+
+.tutoring {
+    padding: 80px 20px;
+    background-color: var(--navy, #0D1B2A);
+    color: var(--white, #FFFFFF);
+    text-align: center;
+}
+
+.tutoring h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--white, #FFFFFF);
+}
+
+.section-intro {
+    color: var(--muted, #8DA0B3);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.tutoring h3 {
+    font-size: 1.8rem;
+    margin: 40px 0 25px 0;
+    color: var(--cream, #F5EDD8);
+}
+
+/* --- Responsive Grids --- */
+.pricing-grid, .tutoring-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- Cards Shared Base Layout --- */
+.pricing-card, .tutoring-card {
+    background-color: var(--card-bg, #162639);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 35px 25px;
+    width: 280px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pricing-card:hover, .tutoring-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Highlight the Online Card with your Coral Color */
+.pricing-card.online {
+    border: 2px solid var(--coral, #E8614B);
+    position: relative;
+}
+
+/* --- Pricing Specific elements --- */
+.pricing-header h4 {
+    font-size: 1.3rem;
+    margin: 0 0 5px 0;
+    color: var(--white, #FFFFFF);
+}
+
+.location {
+    color: var(--muted, #8DA0B3);
+    font-size: 0.85rem;
+    margin: 0 0 20px 0;
+}
+
+.price-display {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--coral, #E8614B);
+    display: block;
+}
+
+.duration {
+    font-size: 0.85rem;
+    color: var(--muted, #8DA0B3);
+}
+
+/* Bullet item list formatting */
+.pricing-features, .tutoring-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    flex-grow: 1; /* Keeps buttons level at the base */
+}
+
+.pricing-features li, .tutoring-card li {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: var(--cream, #F5EDD8);
+    line-height: 1.4;
+}
+
+/* Booking Buttons */
+.pricing-btn {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    color: var(--coral, #E8614B);
+    border: 2px solid var(--coral, #E8614B);
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background-color: var(--coral, #E8614B);
+    color: var(--navy, #0D1B2A);
+}
+
+/* --- Flexibility Banner --- */
+.flexibility-note {
+    max-width: 700px;
+    margin: 40px auto 20px auto;
+    background: rgba(232, 97, 75, 0.1); /* Subtle coral transparency */
+    border-left: 4px solid var(--coral, #E8614B);
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.flexibility-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--cream, #F5EDD8);
+    line-height: 1.5;
+}
+
+/* --- What I Teach Cards --- */
+.tutoring-types .tutoring-grid {
+    max-width: 1200px;
+}
+
+.tutoring-types .tutoring-card {
+    width: 240px; /* Slightly narrower to fit 4 across */
+}
+
+.tutoring-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.tutoring-card h4 {
+    font-size: 1.2rem;
+    margin: 0 0 12px 0;
+    color: var(--white, #FFFFFF);
+}
+
+.tutoring-card p {
+    font-size: 0.85rem;
+    color: var(--muted, #8DA0B3);
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+/* Subtle styling for technical items lists */
+.tutoring-card ul li {
+    position: relative;
+    padding-left: 15px;
+}
+
+.tutoring-card ul li::before {
+    content: "•";
+    color: var(--sage, #7DB5A0);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* --- Why Choose Me Grid --- */
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.detail-item {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 2px solid var(--sage, #7DB5A0);
+}
+
+.detail-item h4 {
+    margin: 0 0 8px 0;
+    color: var(--cream, #F5EDD8);
+    font-size: 1.1rem;
+}
+
+.detail-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted, #8DA0B3);
+    line-height: 1.5;
 }
